@@ -1,0 +1,3 @@
+select count(participant_name)
+from event_registrations
+where payment_status = 'Pending';
