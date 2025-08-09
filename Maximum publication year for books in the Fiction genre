@@ -1,0 +1,3 @@
+select max(publication_year)
+from book_inventory
+where genre = 'Fiction';
