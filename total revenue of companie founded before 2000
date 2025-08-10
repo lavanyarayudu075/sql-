@@ -1,0 +1,4 @@
+select sum(revenue),
+sum(employees_count)
+from companies
+where founded_year < 2000;
