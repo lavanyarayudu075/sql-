@@ -1,0 +1,3 @@
+select count(participant_name)
+from event_registrations
+where registration_date = '2024-11-16';
