@@ -1,0 +1,6 @@
+SELECT title
+FROM book_inventory
+WHERE publication_year < 1960
+  AND quantity = ( SELECT MIN(quantity) FROM book_inventory
+WHERE publication_year < 1960
+  );
