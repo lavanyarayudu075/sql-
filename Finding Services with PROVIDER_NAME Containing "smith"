@@ -1,0 +1,11 @@
+SELECT
+
+  LOWER(provider_name)
+
+FROM
+
+  healthcare_services
+
+WHERE
+
+  LOWER(provider_name) LIKE '%smith%';
