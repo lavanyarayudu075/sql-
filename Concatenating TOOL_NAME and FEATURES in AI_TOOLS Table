@@ -1,0 +1,2 @@
+select concat(tool_name,' ',':',' ',features)
+from ai_tools;
