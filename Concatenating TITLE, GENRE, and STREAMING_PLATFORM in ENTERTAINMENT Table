@@ -1,0 +1,2 @@
+select concat(title,' ','|',' ',genre,' ','|',' ',streaming_platform)
+from entertainment;
