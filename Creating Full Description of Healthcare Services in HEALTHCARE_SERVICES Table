@@ -1,0 +1,2 @@
+select concat(service_name,' ','-',' ',specialty,' ','(Price:',' ','$',price,',',' ','Duration:',' ',duration,' ','mins',')')
+from healthcare_services;
