@@ -1,0 +1,19 @@
+update
+athletes
+set Medalswon = Medalswon+1
+where WorldRecordHolder = 1;
+select
+concat(athleteID,'|',
+firstname,'|',
+lastname,'|',
+countryID,'|',
+dateofbirth,'|',
+gender,'|',
+sport,'|',
+olympicparticipation,'|',
+Medalswon,'|',
+WorldRecordHolder,'|',
+teamaffiliation,'|',
+retirementstatus)
+from athletes
+where WorldRecordHolder = 1;
