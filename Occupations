@@ -1,0 +1,8 @@
+select 
+max(case when occupation = 'Doctor' then name else NULL end)as doctors,
+max(case when occupation = 'Professor' then name else NULL end)as professor,
+max(case when occupation = 'Singer' then name else NULL end)as singer,
+max(case when occupation = 'Actor' then name else NULL end)as actor
+from (select name,occupation, row_number() over(partition by occupation order by name )as rn  from occupations) as t
+group by t.rn
+order by t.rn;
