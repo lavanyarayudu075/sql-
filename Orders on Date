@@ -1,0 +1,8 @@
+select 
+o.OrderId,
+c.Customername
+from Customers c
+join
+Orders o on c.CustomerId = o.CustomerId
+order by OrderId
+limit 1;
