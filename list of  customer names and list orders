@@ -1,0 +1,7 @@
+select 
+c.Customername,
+o.Orderdate
+from Customers c
+join
+Orders o on c.Customerid = o.Customerid
+order by Orderdate;
